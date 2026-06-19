@@ -1,0 +1,40 @@
+{
+  "name": "参考期货分析",
+  "slug": "futures-reference-analysis",
+  "description": "预测走势前先查标的物是否有对应期货，如有则分析期货近期多空双方势能，再结合股票技术面综合判断",
+  "type": "custom",
+  "market": "A股 / 港股 / 美股 / 加密货币（通用）",
+  "timeframe": "日线 / 小时线",
+  "indicators": [
+    {"name": "OI", "params": {"description": "期货持仓量(Open Interest)变化率", "period": 5, "threshold": "±10%"}},
+    {"name": "LongShortRatio", "params": {"description": "前20席位多空持仓比", "period": 5}},
+    {"name": "Basis", "params": {"description": "基差(期货-现货价差)", "period": 5}},
+    {"name": "Volume", "params": {"description": "期货成交量多空比", "period": 5}},
+    {"name": "MA", "params": {"period": 5}},
+    {"name": "MA", "params": {"period": 20}},
+    {"name": "MACD", "params": {"fast": 12, "slow": 26, "signal": 9}},
+    {"name": "RSI", "params": {"period": 14}}
+  ],
+  "entryRules": [
+    "【期货前置条件】标的物存在对应期货品种，且期货多空持仓比(前20席位)连续3日多头增仓 > 5%",
+    "【基差确认】基差由负转正或正基差扩大（期货强于现货，看涨信号）",
+    "【技术面确认】股票 MA5 上穿 MA20（金叉），MACD 金叉确认，RSI > 50 且 < 80",
+    "【量能确认】期货成交量放大（5日均量的1.5倍以上），配合股票放量上涨"
+  ],
+  "exitRules": [
+    "【期货退潮】前20席位多空持仓比连续2日多头减仓 > 5%，或空头增仓 > 10%",
+    "【基差逆转】基差由正转负（期货开始弱于现货）",
+    "【技术破位】股票 MA5 下穿 MA20（死叉）或 MACD 死叉",
+    "【止损线】买入价下方 -5% 无条件止损",
+    "【时间止损】持仓超过20个交易日未触发其他信号则主动减仓 50%"
+  ],
+  "riskManagement": {
+    "stopLoss": "-5%",
+    "takeProfit": "+15%",
+    "positionSize": "总资金的 20%",
+    "maxCorrelationExposure": "同一产业链期货关联标的合计不超过总资金的 40%",
+    "trailingStop": "浮盈超过 +10% 后启动移动止盈，回撤 -3% 离场"
+  },
+  "createdAt": "2026-06-19T12:00:00+08:00",
+  "updatedAt": "2026-06-19T12:00:00+08:00"
+}
