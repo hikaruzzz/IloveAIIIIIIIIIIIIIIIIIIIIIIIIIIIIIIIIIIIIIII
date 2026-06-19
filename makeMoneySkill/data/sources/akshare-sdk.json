@@ -1,0 +1,21 @@
+{
+  "name": "AKShare SDK",
+  "slug": "akshare-sdk",
+  "type": "sdk",
+  "description": "开源 Python 金融数据接口库，覆盖 A股/港股/美股/期货/外汇等全品类数据",
+  "url": "https://github.com/akfamily/akshare",
+  "docUrl": "https://akshare.akfamily.xyz/",
+  "market": ["A股", "港股", "美股", "期货", "外汇", "债券", "基金", "加密货币"],
+  "dataTypes": ["实时行情", "历史K线", "财务数据", "公司公告", "新闻资讯", "资金流向", "龙虎榜", "板块数据", "指数数据", "宏观经济"],
+  "frequency": "按需获取",
+  "cost": "免费",
+  "needAuth": false,
+  "authType": "none",
+  "apiKey": "",
+  "secretKey": "",
+  "rateLimit": "取决于数据源限制，建议加 sleep",
+  "notes": "Python 环境安装 pip install akshare。数据源多为爬虫抓取，稳定性依赖上游网站。适合量化研究和小规模回测。",
+  "status": "active",
+  "createdAt": "2026-06-19T16:00:00+08:00",
+  "updatedAt": "2026-06-19T16:00:00+08:00"
+}

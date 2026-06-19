@@ -10,11 +10,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```
 .claude/skills/
-├── strategy-manager/    # 交易策略管理 — 增删改查用户交易策略
+├── strategy-manager/     # 交易策略管理 — 增删改查用户交易策略
 │   └── SKILL.md
-├── investment-analysis/ # 投资分析 — 使用已有策略分析行情，结果本地保存
+├── investment-analysis/  # 投资分析 — 使用已有策略分析行情，结果本地保存
 │   └── SKILL.md
-└── review-query/        # 复盘查询 — 按时间/标的查询历史分析结果
+├── review-query/         # 复盘查询 — 按时间/标的查询历史分析结果
+│   └── SKILL.md
+└── data-source-manager/  # 数据获取管理 — 增删改查投资标的获取渠道
     └── SKILL.md
 ```
 
@@ -31,6 +33,8 @@ Skill 文件格式：每个 SKILL.md 开头为 YAML frontmatter（定义 name、
 - `消息面` — 相关新闻与公告摘要
 
 交易策略保存在 `data/strategies/` 下，每条策略一个 JSON 文件。
+
+数据获取渠道保存在 `data/sources/` 下，每条渠道一个 JSON 文件。
 
 ## 关键约束
 
