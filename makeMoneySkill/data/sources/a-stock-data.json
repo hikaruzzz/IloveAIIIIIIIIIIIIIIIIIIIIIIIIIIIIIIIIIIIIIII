@@ -2,11 +2,11 @@
   "name": "A-Stock-Data Skill",
   "slug": "a-stock-data",
   "type": "skill",
-  "description": "通过 a-stock-data skill 获取 A 股、港股、美股全品类行情数据",
+  "description": "通过 a-stock-data skill 获取 A 股、港股、美股、贵金属、大宗商品全品类行情数据",
   "url": "/share-a-stock-data",
   "docUrl": "",
-  "market": ["A股", "港股", "美股"],
-  "dataTypes": ["实时行情", "历史K线", "财务数据", "公司公告", "新闻资讯", "研报", "资金流向", "龙虎榜", "板块数据", "指数数据", "宏观经济"],
+  "market": ["A股", "港股", "美股", "贵金属", "大宗商品"],
+  "dataTypes": ["实时行情", "历史K线", "财务数据", "公司公告", "新闻资讯", "研报", "资金流向", "龙虎榜", "板块数据", "指数数据", "宏观经济", "期货数据"],
   "frequency": "按需获取",
   "cost": "免费",
   "needAuth": false,
@@ -17,5 +17,5 @@
   "notes": "通过 Claude Code skill 机制调用，数据来源取决于 skill 内部对接的底层接口。skill 尚未创建，待后续实现。",
   "status": "active",
   "createdAt": "2026-06-19T18:00:00+08:00",
-  "updatedAt": "2026-06-19T18:00:00+08:00"
+  "updatedAt": "2026-06-19T19:00:00+08:00"
 }
