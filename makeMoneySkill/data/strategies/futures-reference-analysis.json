@@ -3,7 +3,7 @@
   "slug": "futures-reference-analysis",
   "description": "预测走势前先查标的物是否有对应期货，如有则分析期货近期多空双方势能，再结合股票技术面综合判断",
   "type": "custom",
-  "market": "A股 / 港股 / 美股 / 加密货币（通用）",
+  "market": "A股 / 港股 / 美股 / 加密货币 / 贵金属（通用）",
   "timeframe": "日线 / 小时线",
   "indicators": [
     {"name": "OI", "params": {"description": "期货持仓量(Open Interest)变化率", "period": 5, "threshold": "±10%"}},
@@ -36,5 +36,5 @@
     "trailingStop": "浮盈超过 +10% 后启动移动止盈，回撤 -3% 离场"
   },
   "createdAt": "2026-06-19T12:00:00+08:00",
-  "updatedAt": "2026-06-19T12:00:00+08:00"
+  "updatedAt": "2026-06-19T19:00:00+08:00"
 }
