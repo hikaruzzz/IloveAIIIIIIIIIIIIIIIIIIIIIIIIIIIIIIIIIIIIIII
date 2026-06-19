@@ -43,7 +43,7 @@ description: 管理投资标的的数据获取渠道 — 支持增删改查
 |------|------|------|------|
 | `name` | string | ✅ | 渠道名称 |
 | `slug` | string | ✅ | 英文标识，自动生成 |
-| `type` | string | ✅ | 渠道类型：`api` / `website` / `data-vendor` / `rss` / `sdk` / `other` |
+| `type` | string | ✅ | 渠道类型：`api` / `website` / `data-vendor` / `rss` / `sdk` / `skill` / `other` |
 | `description` | string | ✅ | 一句话说明 |
 | `url` | string |  | 接口地址或网站地址 |
 | `docUrl` | string |  | 文档地址 |
@@ -68,6 +68,7 @@ description: 管理投资标的的数据获取渠道 — 支持增删改查
 - `data-vendor` — 专业数据商（Wind、彭博、Choice 等）
 - `rss` — RSS 新闻源
 - `sdk` — Python/JavaScript SDK 包（tushare、akshare 等）
+- `skill` — Claude Code Skill（通过 slash command 调用获取数据）
 - `other` — 其他渠道
 
 ### 数据类型（dataTypes）
