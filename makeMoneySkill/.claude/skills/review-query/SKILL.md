@@ -1,11 +1,11 @@
 ---
-name: review-query
+name: share-review-query
 description: 按时间/标的查询历史分析结果，进行复盘
 ---
 
 # 复盘查询
 
-当用户调用 `/review-query` 或提及「复盘」「查询分析记录」「历史分析」「之前分析的」时，按以下规则执行。
+当用户调用 `/share-review-query` 或提及「复盘」「查询分析记录」「历史分析」「之前分析的」时，按以下规则执行。
 
 ## 数据来源
 

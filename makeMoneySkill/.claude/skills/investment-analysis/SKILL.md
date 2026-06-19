@@ -1,11 +1,11 @@
 ---
-name: investment-analysis
+name: share-investment-analysis
 description: 使用已有策略分析行情，结果本地保存
 ---
 
 # 投资分析
 
-当用户调用 `/investment-analysis` 或提及「分析行情」「投资分析」「用策略分析」「帮我分析」时，按以下规则执行。
+当用户调用 `/share-investment-analysis` 或提及「分析行情」「投资分析」「用策略分析」「帮我分析」时，按以下规则执行。
 
 ## 数据存储
 
