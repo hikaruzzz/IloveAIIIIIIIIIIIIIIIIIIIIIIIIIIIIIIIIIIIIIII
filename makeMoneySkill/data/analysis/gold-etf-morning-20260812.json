@@ -1,0 +1,31 @@
+{
+  "reportDate": "2026-08-12",
+  "reportType": "gold-etf-morning",
+  "generatedAt": "2026-08-12T09:55:00+08:00",
+  "strategy": "gold-etf-overnight",
+  "data": {
+    "spotPrice": 4396.52,
+    "spotPriceTime": "2026-08-12T09:50:00+08:00",
+    "spotSource": "腾讯伦敦金现货 hf_XAU",
+    "prevClose": 4368.00,
+    "todayOpen": 4371.82,
+    "todayHigh": 4396.90,
+    "todayLow": 4362.46,
+    "basePrice_0815": 4367,
+    "basePriceNote": "估算值：8/11 北京时间15:00现货价，介于8/11亚盘低点4357.59与美盘高点4393.49之间，取约4367（8/11 06:50 UTC实测4367.10）",
+    "overnightChangePct": 0.43,
+    "signal": "弱信号（0.43% < 0.5%阈值），放弃",
+    "expectedEtfRange": [0.9, 1.3],
+    "expectedEtfNote": "预期ETF涨幅 = 隔夜涨幅×2~3倍 = 0.9%~1.3%，幅度不足以覆盖竞价溢价风险"
+  },
+  "etfActual": {
+    "159562_黄金股ETF华夏": {"price": 2.254, "prevClose": 2.235, "changePct": 0.85, "open": 2.227, "note": "平开-0.36%后拉升，未透支"},
+    "517520_黄金股ETF永赢": {"price": 2.071, "prevClose": 2.044, "changePct": 1.32, "open": 2.044, "note": "平开后拉升，未透支"},
+    "159934_黄金ETF易方达": {"price": 9.487, "prevClose": 9.412, "changePct": 0.80, "open": 9.470, "note": "高开0.62%后震荡"}
+  },
+  "analysis": {
+    "keyFinding": "隔夜涨幅仅+0.43%（4367→4385.60），低于0.5%信号阈值，按纪律放弃。实际黄金股ETF平开/微高开（未透支）+0.85%~+1.32%，联动约2~3倍但信号弱不追，纪律执行正确",
+    "keyLevels": {"support": 4362.46, "todayHigh": 4396.90, "ma200": 4489},
+    "verdict": "不追。隔夜信号弱+竞价未透支，今日无黄金股ETF操作"
+  }
+}
